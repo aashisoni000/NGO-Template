@@ -7,9 +7,9 @@
 
   /*=== Colors ===*/
   --nav-color: hsl(0, 0%, 96%);
-  --nav-color-dark: hsl(210, 9%, 25%);
-  --nav-color-darker: hsl(210, 10%, 18%);
-  --nav-white-color: #fff;
+  --nav-color-dark: hsl(0, 0%, 90%);
+  --nav-color-darker: hsl(0, 0%, 61%);
+  --nav-white-color: #333333;
   --nav-icon-color:#000080; 
   --nav-body-color: hsl(0, 0%, 97%);
 
@@ -137,12 +137,65 @@ a {
 
 
 /* Navigation for mobile devices */
+@media screen and (max-width:1118px){
+    .nav__menu{
+        position:absolute;
+        left: 0 ;
+        top: 2.5rem;
+        width: 100%;
+        background-color: var(--nav-color);
+        height: calc(100vh - var(--nav-header-height));
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: top .4s, opacity .3s;
+    }
+    .nav__menu::-webkit-scrollbar{
+        width: 0;
+    }
+    .nav__list{
+        background-color: var(--nav-color);
+        padding-top: 1rem;
+    }
 
+}
+
+.nav__link{
+    color: var(--nav-white-color);
+    background-color: var(--nav-color);
+    font-weight: var(--nav-font-semi-bold);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+}
+
+.nav__link:hover{
+    background-color: var(--nav-color-dark);
+    color: var(--nav-white-color);
+}
 
 /* Show menu */
 
+.show-menu{
+    opacity: 1;
+    top: 4rem;
+    pointer-events: initial;
+}
+
 
 /* Show icon */
+
+.show-icon .nav__burger{
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.show-icon .nav__close{
+    opacity: 1;
+    transform: rotate(90deg);
+}
 
 
 /*=============== DROPDOWN ===============*/
