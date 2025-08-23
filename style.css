@@ -8,7 +8,7 @@
   /*=== Colors ===*/
   --nav-color: hsl(0, 0%, 96%);
   --nav-color-dark: hsl(0, 0%, 90%);
-  --nav-color-darker: hsl(0, 0%, 61%);
+  --nav-color-darker: hsl(0, 0%, 80%);
   --nav-white-color: #333333;
   --nav-icon-color:#000080; 
   --nav-body-color: hsl(0, 0%, 97%);
@@ -199,6 +199,39 @@ a {
 
 
 /*=============== DROPDOWN ===============*/
+
+.dropdown__item{
+    cursor:pointer;
+
+}
+
+.dropdown__arrow{
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+}
+
+.dropdown__link{
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: var(--nav-white-color);
+    background-color: var(--nav-color-dark);
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: var(--nav-font-semi-bold);
+    transition: background-color .3s;
+}
+
+.dropdown__link i{
+    font-size: 1.25rem;
+    font-weight: initial;
+}
+
+.dropdown__link:hover{
+    background-color: var(--nav-color-darker);
+    color: var(--nav-white-color);
+
+}
 
 
 /* Show dropdown menu & submenu */
