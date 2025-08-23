@@ -1,0 +1,170 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*== VARIABLES ==*/
+:root {
+  --nav-header-height: 4rem;
+
+  /*=== Colors ===*/
+  --nav-color: hsl(0, 0%, 96%);
+  --nav-color-dark: hsl(210, 9%, 25%);
+  --nav-color-darker: hsl(210, 10%, 18%);
+  --nav-white-color: #fff;
+  --nav-icon-color:#000080; 
+  --nav-body-color: hsl(0, 0%, 97%);
+
+  /*=== Font and typography ===*/
+
+  --nav-body-font: "Montserrat", sans-serif;
+  --nav-normal-font-size: .938rem;
+
+  --nav-font-regular: 400;
+  --nav-font-semi-bold: 600;
+
+  /*=== z index ===*/
+  --nav-z-tooltip: 10;
+  --nav-z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --nav-normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--nav-body-font);
+  font-size: var(--nav-normal-font-size);
+  background-color: var(--nav-body-color);
+}
+
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+/*=============== HEADER ===============*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-color);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--nav-z-fixed);
+}
+
+
+/*=============== NAV ===============*/
+.nav{
+    height: var(--nav-header-height);
+}
+
+.nav__logo{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: var(--nav-font-semi-bold);
+}
+
+.nav__logo img{
+    font-weight: initial;
+    font-size: 1.25rem;
+    height: 3rem;
+    margin: 0.5rem;
+
+}
+
+.nav__toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+    
+.nav__burger{
+
+}
+.nav__close{
+    color: var(--nav-icon-color);
+}
+
+.nav__close {
+  position: absolute;
+  inset: 0;              
+  display: flex;         
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+    height: 32px;
+
+  font-size: 1.25rem;    /* icon size */
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+}
+
+
+.nav__close{
+    opacity: 0;
+}
+
+.nav__data{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* Navigation for mobile devices */
+
+
+/* Show menu */
+
+
+/* Show icon */
+
+
+/*=============== DROPDOWN ===============*/
+
+
+/* Show dropdown menu & submenu */
+
+
+/* Rotate dropdown icon */
+
+
+/*=============== DROPDOWN SUBMENU ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For large devices */
+
+
+  /* Show dropdown menu */
+  
+  
+  /* Show dropdown submenu */
