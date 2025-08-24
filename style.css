@@ -361,10 +361,6 @@ a {
 }
 
 
-/* ==========NAVBAR NAVBAR NAVBAR ================= */
-/* ==========NAVBAR NAVBAR NAVBAR ================= */
-/* ==========NAVBAR NAVBAR NAVBAR ================= */
-
 /* ============== video section =================== */
 /* ============== video section =================== */
 /* ============== video section =================== */
@@ -426,3 +422,64 @@ a {
 /* ============= impact section =================== */
 /* ============= impact section =================== */
 /* ============= impact section =================== */
+
+.counters{
+    padding: 3em 2em;
+    text-align: center;
+
+}
+
+.counters > div{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4em 2em;
+}
+
+.counter {
+    position: relative;
+}
+
+.counter h1{
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+/* .counter:not(:last-child)::before{
+    content:'';
+    position: absolute;
+    background-color: #333333;
+    width: 2px;
+    height: 3em;
+    top:50%;
+    transform: translateY(-50%);
+    right:-1em;
+
+} */
+
+@media screen and (max-width:900px) and (min-width:501px){
+    .counters > div{
+        grid-template-columns: 1fr 1fr;
+    }
+    .counter:nth-child(2)::before{
+        display:none;
+    }
+}
+
+@media screen and (max-width:500px){
+    .counters > div {
+        grid-template-columns: 1fr;
+        row-gap: 5em;
+
+    }
+
+}
+
+.impact-text h2{
+    text-align: center;
+}
+
+.impact_section {
+    margin-bottom: 5vh;
+}
