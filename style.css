@@ -483,3 +483,43 @@ a {
 .impact_section {
     margin-bottom: 5vh;
 }
+
+.presence-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.presence-text {
+  text-align: center;
+  margin: 2rem 0;
+  width: 50vw;
+  padding: 5vw;
+  padding-left: 12vw;
+  
+
+}
+
+.india-map {
+  margin: 0 auto;
+  width: 70vw;
+  height: 80vh;
+  object-fit: contain;
+}
+
+.india-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.presence-text h2{
+  margin-bottom: 2vh;
+}
+
+.presence-text p{
+  margin-top: 1vh;
+  line-height: 1.5;
+}
