@@ -360,6 +360,12 @@ a {
   }
 }
 
+.main-heading{
+    border-bottom: 2px solid #fdd831;
+    margin-bottom: 1em;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
 
 /* ============== video section =================== */
 /* ============== video section =================== */
@@ -419,9 +425,32 @@ a {
     margin-top:1vh;
 }
 
+/* ============== footprint secction =================== */
+
+.footprints{
+  display: flex;
+}
+
+.footprints img {
+  height: 12vh;                 /* footprint size */
+  opacity: 1;                  /* start hidden */
+  animation: fadeInOut 6s infinite;
+}
+
 /* ============= impact section =================== */
 /* ============= impact section =================== */
 /* ============= impact section =================== */
+
+.impact-text{
+  text-align: center;
+}
+
+.impact-text h2{
+  text-align: center;
+  
+  
+
+}
 
 .counters{
     padding: 3em 2em;
@@ -608,4 +637,30 @@ textarea{
 
 .fcontent{
   margin: 5vw;
+}
+
+.fcontent h4{
+  margin-bottom: 0.6em;
+}
+
+.fcontent p{
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.footer3{
+  height: 8vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer3 p{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 0.8em;
 }
