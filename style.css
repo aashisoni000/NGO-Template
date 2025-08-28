@@ -48,6 +48,18 @@ body {
   font-family: var(--nav-body-font);
   font-size: var(--nav-normal-font-size);
   background-color: var(--nav-body-color);
+
+}
+
+html, body {
+  height: 100%;        
+  margin: 0;           
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;             /* pushes footer down */
 }
 
 ul {
@@ -429,17 +441,46 @@ a {
 
 .footprints{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 7vh;
+
+
 }
 
 .footprints img {
-  height: 12vh;                 /* footprint size */
-  opacity: 1;                  /* start hidden */
-  animation: fadeInOut 6s infinite;
+  height: 12vh;                
+  opacity: 0;                  
+  animation: fadeInOut 4s infinite;
+  transform: rotate(90deg);
 }
+.footprints img:nth-child(1) { transform: rotate(65deg); animation-delay: 0s; }
+.footprints img:nth-child(2) { transform: rotate(110deg); animation-delay: 0.4s; }
+.footprints img:nth-child(3) { transform: rotate(87deg); animation-delay: 0.8s; }
+.footprints img:nth-child(4) { transform: rotate(94deg); animation-delay: 1.2s; }
+.footprints img:nth-child(5) { transform: rotate(89deg); animation-delay: 1.6s; }
+.footprints img:nth-child(6) { transform: rotate(91deg); animation-delay: 2s; }
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+ 
 
 /* ============= impact section =================== */
 /* ============= impact section =================== */
 /* ============= impact section =================== */
+
+.counter h1{
+  color: rgb(145, 199, 145);
+  
+}
+.counter h3{
+  font-size: 1em;
+}
 
 .impact-text{
   text-align: center;
@@ -447,8 +488,6 @@ a {
 
 .impact-text h2{
   text-align: center;
-  
-  
 
 }
 
@@ -513,12 +552,54 @@ a {
     margin-bottom: 5vh;
 }
 
+
+
+
+/* ================= division info ==================
+================= division info ==================
+================= division info ================== */
+.division-info{
+  border-bottom: #333333 1px dotted;
+  border-top: #333333 1px dotted;
+  margin-left: 5vw;
+  margin-right: 5vw;;
+  margin-top: 5vh;
+}
+.division{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+  gap : 2em;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.divi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.divi img{
+  height: 4vh;
+  object-fit: contain;
+  margin-right: 0.5em;
+}
+
+
+/* ================= presence section =================
+================= presence section =================
+================= presence section ================= */
+
 .presence-section{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
 
 .presence-text {
@@ -561,6 +642,7 @@ a {
 .footer{
   background-color: rgb(228, 228, 228);
   padding-top: 10vh;
+
 }
 
 .footer1{
