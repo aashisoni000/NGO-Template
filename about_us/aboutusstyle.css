@@ -364,7 +364,6 @@ a {
 
 .image-container {
   position: relative;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
 
@@ -415,4 +414,153 @@ a {
 .intro-text p{
     margin-top:1vh;
     line-height: 1.5;
+}
+
+/* ================= division info ==================
+================= division info ==================
+================= division info ================== */
+.division-info{
+  border-bottom: #333333 1px dotted;
+  border-top: #333333 1px dotted;
+  margin-left: 5vw;
+  margin-right: 5vw;;
+  margin-top: 5vh;
+}
+.division{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+  gap : 2em;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.divi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.divi img{
+  height: 4vh;
+  object-fit: contain;
+  margin-right: 0.5em;
+}
+
+/* ============ footer =========== */
+/* ============ footer =========== */
+/* ============ footer =========== */
+
+.footer{
+  background-color: rgb(228, 228, 228);
+  padding-top: 10vh;
+  margin-top: 5vh;
+
+}
+
+.footer1{
+  display: flex;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  justify-content: center;
+  padding-bottom: 10vh;
+}
+
+.logo {
+  width: 2.5em;
+  height: 2.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0.5em;
+}
+
+.alllogos{
+  display: flex;
+}
+
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  margin: 1em;
+  margin-bottom: 0.1em;
+  width: 43%;
+
+}
+
+.writetous{
+  text-align: center;
+  margin-right: 5vw;
+}
+textarea{
+  width: 94%;
+  padding: 0.75rem;
+
+}
+
+.writetous button{
+  height: 2.5em;
+  width: 7em;
+  margin-top: 0.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color:var(--nav-body-color)
+}
+
+
+.getintouch{
+  text-align: center;
+  margin-left: 5vw;
+}
+
+.getintouch h4{
+  margin-top: 0.5em;
+}
+
+.footer2{
+  background-color: #333333;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  color:var(--nav-body-color)
+  
+}
+
+.fcontent{
+  margin: 5vw;
+}
+
+.fcontent h4{
+  margin-bottom: 0.6em;
+}
+
+.fcontent p{
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.footer3{
+  height: 8vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer3 p{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 0.8em;
 }
