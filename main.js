@@ -1,3 +1,7 @@
+// navigation bar
+// navigation bar
+// navigation bar
+
 const showMenu = (toggleId, navId) =>{
    const toggle = document.getElementById(toggleId),
          nav = document.getElementById(navId)
@@ -48,5 +52,27 @@ window.addEventListener("scroll", () => {
 
     activated = true;
   }
+});
+
+
+// swiper js
+// swiper js
+// swiper js
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView:3,
+  spaceBetween:30,
+  slidesPerGroup:3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+
+  },
+  navigation: {
+    nextE1: ".swiper-button-next",
+    prevE1: ".swiper-button-prev",
+  },
 });
 

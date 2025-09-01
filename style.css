@@ -710,7 +710,7 @@ textarea{
 
 .footer2{
   background-color: #333333;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   color:var(--nav-body-color)
@@ -751,6 +751,11 @@ textarea{
 /* ================== image slider =================== */
 /* ================== image slider =================== */
 /* ================== image slider =================== */
+
+.slider-section-heading{
+  text-align: center;
+  margin-top: 3em;
+}
 
 .card-image{
   position: relative;
