@@ -634,6 +634,30 @@ a {
   line-height: 1.5;
 }
 
+/* =========== quote section ===========
+=========== quote section ===========
+=========== quote section =========== */
+
+.quote-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 10vw;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-right: 30vw;
+  margin-left: 30vw;
+
+}
+
+.quote-section img{
+  height: 5vh;
+}
+
+.quote-section p{
+  font-size: 1.5em;
+  line-height: 1.5;
+}
 
 /* ============ footer =========== */
 /* ============ footer =========== */
@@ -858,3 +882,4 @@ textarea{
   padding: 40px 0 ;
 
 }
+
