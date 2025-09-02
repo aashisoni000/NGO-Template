@@ -647,10 +647,30 @@ a {
 
 .footer1{
   display: flex;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  justify-content:space-between;
   padding-bottom: 10vh;
+
+}
+
+.contactus{
+  text-align: right;
+  padding-left: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+.address p{
+  padding-bottom: 0.5em;
+  
+}
+.address h4{
+  margin-bottom: 0.5em;
 }
 
 .logo {
