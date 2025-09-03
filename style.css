@@ -439,28 +439,34 @@ a {
 
 /* ============== footprint secction =================== */
 
-.footprints{
+.footprints {
   display: flex;
+  flex-wrap: nowrap;           /* ✅ keep them in one row only */
   justify-content: space-evenly;
   align-items: center;
   gap: 1em;
   margin-bottom: 7vh;
-
-
+  overflow: hidden;            /* ✅ hide anything that might overflow */
 }
 
 .footprints img {
-  height: 12vh;                
-  opacity: 0;                  
+  height: 12vh;
+  max-height: 80px;
+  width: auto;
+  opacity: 0;
   animation: fadeInOut 4s infinite;
-  transform: rotate(90deg);
 }
+
+/* ✅ Your custom angles + delays */
 .footprints img:nth-child(1) { transform: rotate(65deg); animation-delay: 0s; }
 .footprints img:nth-child(2) { transform: rotate(110deg); animation-delay: 0.4s; }
 .footprints img:nth-child(3) { transform: rotate(87deg); animation-delay: 0.8s; }
-.footprints img:nth-child(4) { transform: rotate(94deg); animation-delay: 1.2s; }
-.footprints img:nth-child(5) { transform: rotate(89deg); animation-delay: 1.6s; }
-.footprints img:nth-child(6) { transform: rotate(91deg); animation-delay: 2s; }
+.footprints img:nth-child(4) { transform: rotate(100deg); animation-delay: 1.2s; }
+.footprints img:nth-child(5) { transform: rotate(80deg); animation-delay: 1.6s; }
+.footprints img:nth-child(6) { transform: rotate(71deg); animation-delay: 2s; }
+.footprints img:nth-child(7) { transform: rotate(85deg); animation-delay: 2.4s; }
+.footprints img:nth-child(8) { transform: rotate(95deg); animation-delay: 2.8s; }
+.footprints img:nth-child(9) { transform: rotate(70deg); animation-delay: 3.2s; }
 
 @keyframes fadeInOut {
   0%   { opacity: 0; }
@@ -468,7 +474,29 @@ a {
   80%  { opacity: 1; }
   100% { opacity: 0; }
 }
- 
+
+/* 📱 Tablet: show only first 6 footsteps */
+@media (max-width: 768px) {
+  .footprints img:nth-child(n+7) {
+    display: none;
+  }
+  .footprints img {
+    height: 9vh;
+    max-height: 60px;
+  }
+}
+
+/* 📱 Mobile: show only first 4 footsteps */
+@media (max-width: 480px) {
+  .footprints img:nth-child(n+5) {
+    display: none;
+  }
+  .footprints img {
+    height: 8vh;
+    max-height: 50px;
+  }
+}
+
 
 /* ============= impact section =================== */
 /* ============= impact section =================== */
