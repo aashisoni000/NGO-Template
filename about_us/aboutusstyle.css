@@ -564,3 +564,48 @@ textarea{
   margin-right: 10vw;
   font-size: 0.8em;
 }
+
+
+/* =========== quote section ===========
+=========== quote section ===========
+=========== quote section =========== */
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;              
+  margin: 5vh auto;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+
+.quote-section img {
+  height: 5vh;
+  animation: floaty 4s ease-in-out infinite;
+}
+
+.quote-section img:first-child {
+  margin-right: 1rem;       
+  transform: translateX(-20px); 
+}
+
+.quote-section img:last-child {
+  margin-left: 1rem;        
+  transform: translateX(20px);  
+  animation-delay: 2s;      
+}
+
+.quote-section p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0 1rem;
+}
+
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
