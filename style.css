@@ -710,39 +710,59 @@ a {
 /* ============ footer =========== */
 /* ============ footer =========== */
 /* ============ footer =========== */
-
-.footer{
+.footer {
   background-color: rgb(228, 228, 228);
-  padding-top: 10vh;
-
+  padding-top: 5vh;
 }
 
-.footer1{
+/* ---------- footer1 section ----------- */
+.footer1 {
   display: flex;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  justify-content:space-between;
-  padding-bottom: 10vh;
-
+  flex-wrap: wrap; 
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 0 5vw 5vh 5vw;
 }
 
-.contactus{
-  text-align: right;
-  padding-left: 2vw;
+.writetous {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0.5em 0.5em;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+}
+
+.writetous button {
+  height: 2.5em;
+  width: 100%;
+  max-width: 10em;
+  margin-top: 0.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: var(--nav-body-color);
+  cursor: pointer;
+}
+
+.getintouch {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.alllogos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1em;
-
-}
-
-.address p{
-  padding-bottom: 0.5em;
-  
-}
-.address h4{
-  margin-bottom: 0.5em;
 }
 
 .logo {
@@ -754,89 +774,86 @@ a {
   margin: 0.5em;
 }
 
-.alllogos{
-  display: flex;
+.contactus {
+  flex: 1 1 300px;
+  text-align: left;
 }
 
-
-input, textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  resize: vertical;
-  margin: 1em;
-  margin-bottom: 0.1em;
-  width: 43%;
-
+.address p {
+  margin-bottom: 0.5em;
+}
+.address h4 {
+  margin-bottom: 0.5em;
 }
 
-.writetous{
-  text-align: center;
-  margin-right: 5vw;
-}
-textarea{
-  width: 94%;
-  padding: 0.75rem;
-
-}
-
-.writetous button{
-  height: 2.5em;
-  width: 7em;
-  margin-top: 0.5em;
-  border-radius: 10px;
-  border: none;
-  background-color: rgb(0, 0, 0);
-  color:var(--nav-body-color)
-}
-
-
-.getintouch{
-  text-align: center;
-  margin-left: 5vw;
-}
-
-.getintouch h4{
-  margin-top: 0.5em;
-}
-
-.footer2{
+/* ---------- footer2 section ----------- */
+.footer2 {
   background-color: #333333;
-  height: 40vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  color:var(--nav-body-color)
-  
+  padding: 5vh 5vw 10vh 5vw;
+  color: var(--nav-body-color);
+  gap: 2rem;
 }
 
-.fcontent{
-  margin: 5vw;
+.fcontent {
+  flex: 1 1 150px;
+  min-width: 150px;
 }
 
-.fcontent h4{
+.fcontent h4 {
   margin-bottom: 0.6em;
 }
-
-.fcontent p{
+.fcontent p {
   font-size: 0.9em;
   line-height: 1.5;
 }
 
-.footer3{
-  height: 8vh;
+/* ---------- footer3 section ----------- */
+.footer3 {
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  padding: 1rem;
 }
 
-.footer3 p{
-  margin-left: 10vw;
-  margin-right: 10vw;
+.footer3 p {
+  margin: 0 5vw;
   font-size: 0.8em;
+  line-height: 1.4;
+}
+
+/* -------- Responsive Breakpoints -------- */
+@media (max-width: 992px) {
+  .footer1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contactus {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .fcontent {
+    margin: 1rem 0;
+  }
+  .writetous button {
+    width: 100%;
+  }
+  input, textarea {
+    margin: 0.5em 0;
+  }
 }
 
 
