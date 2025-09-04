@@ -670,7 +670,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;               /* space between images and text */
+  gap: 1rem;              
   margin: 5vh auto;
   text-align: center;
   max-width: 800px;
@@ -684,14 +684,14 @@ a {
 }
 
 .quote-section img:first-child {
-  margin-right: 1rem;       /* push left quote away from text */
-  transform: translateX(-20px); /* move further left */
+  margin-right: 1rem;       
+  transform: translateX(-20px); 
 }
 
 .quote-section img:last-child {
-  margin-left: 1rem;        /* push right quote away from text */
-  transform: translateX(20px);  /* move further right */
-  animation-delay: 2s;      /* so it floats out of sync */
+  margin-left: 1rem;        
+  transform: translateX(20px);  
+  animation-delay: 2s;      
 }
 
 .quote-section p {
@@ -700,7 +700,7 @@ a {
   margin: 0 1rem;
 }
 
-/* floating animation */
+
 @keyframes floaty {
   0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(-10px); }
@@ -844,89 +844,7 @@ textarea{
 /* ================== image slider =================== */
 /* ================== image slider =================== */
 
-.slider-section-heading{
+.campaign-section-heading{
   text-align: center;
-  margin-top: 3em;
 }
-
-.slider-section{
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.card-image{
-  position: relative;
-  height: 250px;
-  width: 350px;
-  border-radius: 5%;
-  background: #FFF;
-  padding: 3px;
-
-}
-
-.card-image .card-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5%;
-  border: 4px solid #fdd831;
-}
-
-.card{
-  width: 370px;
-  border-radius: 25px;
-  background-color: #FFF ;
-  box-shadow: 0 4px 10px rgba(196, 196, 196, 0.2);
-  margin-bottom: 10vh;
-  margin-top: 5vh;
-}
-
-.image-content , .card-content{
-  display: flex;
-  flex-direction: column ;
-  align-items: center;
-  padding: 10px 14px ;
-}
-
-.image-content{
-  row-gap: 5px;
-  position: relative;
-}
-
-
-.slide-content{
-  margin: 0 40px;
-}
-
-.name{
-  font-size: 1.3em;
-  margin-bottom: 0.5em;
-  
-}
-
-.description{
-  font-size: 1em;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-.button{
-  border: none;
-  font-size: 1em;
-  background-color: #fdd831;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin: 10px;
-  transition: all 0.3s ease;
-
-}
-
-.button:hover{
-  background-color: #eccb39;
-  transition: 0.3s;
-}
-
-
 
